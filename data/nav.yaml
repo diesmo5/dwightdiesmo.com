@@ -1,0 +1,19 @@
+1EXPERIENCE:
+  navName: EXPERIENCE
+  navLink: /experience
+
+2PERSONAL:
+  navName: PERSONAL
+  navLink: /personal
+
+3PASSIONS:
+  navName: PASSIONS
+  navLink: /passions
+
+4MEDIA:
+  navName: MEDIA
+  navLink: /media
+
+5CONTACT:
+  navName: CONTACT
+  navLink: /contact

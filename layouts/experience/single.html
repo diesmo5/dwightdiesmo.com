@@ -1,0 +1,143 @@
+{{define "main"}}
+<div class="py-5"></div>
+<section id="hero" class="container py-5">
+  <h1 class="font-weight-bold">{{.Title}}</h1>
+  <h6 class="font-weight-light text-secondary">
+    Last Updated: {{ .PublishDate.Format "January 2, 2006" }}
+  </h6>
+  <img
+    src="/assets/experience/{{.Params.experienceImg}}"
+    alt=""
+    class="w-100"
+  />
+</section>
+
+<section id="content" class="container py-2">
+  <text class="h6 font-weight-normal">
+    {{.Content}}
+  </text>
+</section>
+
+<section id="reference" class="container py-5">
+    <h2 class="font-weight-bold">VISIT THE COMPANY WEBSITE</h2>
+    <a href="{{.Params.experienceWebsite}}" target="_blank" class="text-decoration-none text-uppercase text-dark">{{.Params.experienceWebsiteTitle}}</a>
+</section>
+
+<section id="gallery" class="container py-5">
+    <h2 class="font-weight-bold">GALLERY</h2>
+  <div class="row">
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgOne}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgTwo}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgThree}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgFour}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgFive}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgSix}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgSeven}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgEight}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgNine}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgTen}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgEleven}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgTwelve}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgThirteen}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+    <div class="card col-6 border-0 py-3">
+      <img
+        src="/assets/experience/{{.Params.galleryImgFourteen}}"
+        class="card-img-top animate-hover"
+        alt="{{.Params.galleryImgOneAlt}}"
+      />
+    </div>
+  </div>
+</section>
+
+<section id="pageNav" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12 py-2 m-auto">
+        <a href="/experience/{{.Params.backNavLink}}" class="btn btn-block btn-alpha-outline rounded-0"><i class="fas fa-caret-left"></i> {{.Params.backNavTitle}}</a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 py-2 m-auto">
+        <a href="/experience/{{.Params.forwardNavLink}}" class="btn btn-block btn-alpha-outline rounded-0">{{.Params.forwardNavTitle}} <i class="fas fa-caret-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{end}}

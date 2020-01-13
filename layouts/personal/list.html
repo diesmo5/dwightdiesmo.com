@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<section id="hero" class="">
+  <img src="/assets/{{.Params.hero}}" alt="{{.Params.heroAlt}}" class="w-100" />
+  <div class="container text-center py-5">
+    <h1 class="font-weight-bold text-uppercase pt-5">{{.Title}}</h1>
+    <h2 class="font-weight-light pb-5">{{.Description}}</h2>
+  </div>
+</section>
+
+<section id="personal" class="">
+  <div class="row">
+    {{ range .Pages.ByDate }}
+    <div class="row bg-{{.Params.personalColor}}">
+      <div class="col-lg-8 col-12 m-auto">
+        <img
+          src="/assets/personal/{{.Params.personalImg}}"
+          alt="{{.Params.personalImgAlt}}"
+          class="w-100"
+        />
+      </div>
+      <div class="col-lg-4 col-12 p-5 m-auto">
+        <img
+          src="/assets/logo/{{.Params.personalLogo}}"
+          alt=""
+          height="150px"
+          class="w-auto pb-3"
+        />
+        <h2 class="font-weight-bold text-uppercase">{{.Title}}</h2>
+        <h4 class="font-weight-light py-3">{{.Description}}</h4>
+        <a href="{{.URL}}" class="btn btn-block btn-{{.Params.personalBtnColor}}-outline rounded-0 text-uppercase py-3 px-4">
+          learn about my work for {{.Title}}
+        </a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

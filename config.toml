@@ -1,0 +1,3 @@
+baseURL = "http://mywebsite.com/"
+languageCode = "en-us"
+title = "Website Title"

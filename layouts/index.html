@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+<section id="hero" class="pt-5">
+  <img src="/assets/{{.Params.hero}}" alt="{{.Params.heroAlt}}" class="w-100" />
+</section>
+<section id="banner" class="bg-alpha py-5">
+  <div class="container text-center text-white py-5">
+    <h1 class="">{{.Params.bannerTitle}}</h1>
+    <h5 class="pb-4">{{.Params.bannerText}}</h5>
+    <a
+      href="{{.Params.bannerBtnLink}}" target="_blank"
+      class="btn btn-bravo-outline rounded-0 text-uppercase font-weight-bold px-5 py-3"
+      >{{.Params.bannerBtnText}}</a
+    >
+  </div>
+</section>
+<section id="bio" class="py-5">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12 py-5">
+        <h1 class="">{{.Params.bioTitle}}</h1>
+        <hr class="" />
+        <h5 class="font-weight-normal pb-4">{{.Params.bioText}}</h5>
+        <a
+          href="{{.Params.bioBtnLink}}"
+          class="btn btn-alpha-outline rounded-0 text-uppercase font-weight-bold px-5 py-3"
+          >{{.Params.bioBtnText}}</a
+        >
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 py-5">
+        <img
+          src="/assets/{{.Params.bioImg}}"
+          alt="{{.Params.bioImgAlt}}"
+          class="animate-hover w-100"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="featured" class="py-5">
+  <div class="container text-center">
+    <h5 class="text-uppercase">{{.Params.featuredTitle}}</h5>
+    <div class="row">
+      {{range .Site.Data.featured}}
+      <div class="col-lg-3 col-md-4 col-6 m-auto">
+        <a href="{{.articleLink}}" target="_blank" class="text-decoration-none">
+          <img
+            src="/assets/publisher/{{.publisherLogo}}"
+            alt="{{.publisherName}}"
+            class="w-100"
+          />
+        </a>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+
+<section id="media" class="py-5 bg-alpha">
+  <div class="container py-5">
+    <h1 class="text-uppercase text-white pb-5">{{.Params.mediaTitle}}</h1>
+    <div class="row">
+      {{range .Site.Data.media}}
+      <div class="col-lg-2 col-md-3 col-6 text-center py-5">
+        <a href="{{.mediaLink}}" target="_blank" class="text-decoration-none text-nav">
+          <i class="{{.mediaIcon}} fa-5x"></i>
+        </a>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+
+<section id="upcoming" class="py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 m-auto">
+                <h5 class="text-uppercase">{{.Params.upcomingTitle}}</h5>
+                <hr class="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 m-auto">
+                <h1 class="">{{.Params.upcomingContact}}</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}

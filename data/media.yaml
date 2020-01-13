@@ -1,0 +1,25 @@
+Instagram:
+  mediaLink: https://instagram.com/dwightdiesmo
+  mediaIcon: fab fa-instagram
+  mediaColor: danger
+
+LinkedIn:
+  mediaLink: https://www.linkedin.com/in/dwightdiesmo/
+  mediaIcon: fab fa-linkedin-in
+  mediaColor: danger
+
+Facebook:
+  mediaLink: https://www.facebook.com/people/Dwight-Diesmo/100009866015911
+  mediaIcon: fab fa-facebook-f
+  mediaColor: danger
+
+Twitter:
+  mediaLink: https://twitter.com/dwightdiesmo
+  mediaIcon: fab fa-twitter
+  mediaColor: danger
+
+Medium:
+  mediaLink: https://medium.com/@dwightdiesmo
+  mediaIcon: fab fa-medium-m
+  mediaColor: danger
+  
