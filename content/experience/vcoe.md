@@ -38,3 +38,4 @@ forwardNavLink: newco
 
 ---
 
+During my team at VCOE, I was responsible for teaching high school students full-stack software development.
